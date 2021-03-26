@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17701"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List Table View Controller-->
+        <scene sceneID="j0A-Rf-abm">
+            <objects>
+                <tableViewController id="Wc7-eP-s3r" customClass="ListTableViewController" customModule="Accelometron" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nCv-ea-M2U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="IVE-Je-Y95">
+                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IVE-Je-Y95" id="9bj-rN-zno">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pexels-photo-569995" translatesAutoresizingMaskIntoConstraints="NO" id="lHG-M3-gE7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cameras" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wq-mU-AiG">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.30047454893426484" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-HeavyItalic" family="Avenir Next" pointSize="50"/>
+                                            <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lHG-M3-gE7" firstAttribute="leading" secondItem="9bj-rN-zno" secondAttribute="leading" id="84m-o0-Qws"/>
+                                        <constraint firstAttribute="trailing" secondItem="lHG-M3-gE7" secondAttribute="trailing" id="XvJ-LH-I4L"/>
+                                        <constraint firstItem="9wq-mU-AiG" firstAttribute="leading" secondItem="9bj-rN-zno" secondAttribute="leading" id="fFX-8c-Laq"/>
+                                        <constraint firstItem="lHG-M3-gE7" firstAttribute="top" secondItem="9bj-rN-zno" secondAttribute="top" id="gxL-Q1-ZBi"/>
+                                        <constraint firstItem="9wq-mU-AiG" firstAttribute="top" secondItem="9bj-rN-zno" secondAttribute="top" id="j4Q-D5-o5U"/>
+                                        <constraint firstAttribute="trailing" secondItem="9wq-mU-AiG" secondAttribute="trailing" id="pix-zf-CGa"/>
+                                        <constraint firstAttribute="bottom" secondItem="9wq-mU-AiG" secondAttribute="bottom" id="q82-Jx-0tC"/>
+                                        <constraint firstAttribute="bottom" secondItem="lHG-M3-gE7" secondAttribute="bottom" id="t1h-gt-T7w"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wc7-eP-s3r" id="gZm-d5-X5K"/>
+                            <outlet property="delegate" destination="Wc7-eP-s3r" id="LhP-D5-Eee"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GYI-ys-uEp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="-29.347826086956523"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pexels-photo-569995" width="1080" height="720"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
