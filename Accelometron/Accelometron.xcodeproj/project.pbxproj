@@ -13,6 +13,8 @@
 		E336F6C9260E4A0E0042CAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E336F6C7260E4A0E0042CAE7 /* Main.storyboard */; };
 		E336F6CB260E4A110042CAE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E336F6CA260E4A110042CAE7 /* Assets.xcassets */; };
 		E336F6CE260E4A110042CAE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E336F6CC260E4A110042CAE7 /* LaunchScreen.storyboard */; };
+		E336F6DB260E62F50042CAE7 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E336F6DA260E62F50042CAE7 /* ParallaxCell.swift */; };
+		E336F6DF260E671A0042CAE7 /* imagesPlusNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E336F6DE260E671A0042CAE7 /* imagesPlusNames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E336F6CA260E4A110042CAE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E336F6CD260E4A110042CAE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E336F6CF260E4A110042CAE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E336F6DA260E62F50042CAE7 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		E336F6DE260E671A0042CAE7 /* imagesPlusNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagesPlusNames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,9 @@
 		E336F6C0260E4A0E0042CAE7 /* Accelometron */ = {
 			isa = PBXGroup;
 			children = (
+				E336F6D9260E62BB0042CAE7 /* Model */,
+				E336F6D8260E62B50042CAE7 /* View */,
+				E336F6D7260E62AD0042CAE7 /* Controller */,
 				E336F6C1260E4A0E0042CAE7 /* AppDelegate.swift */,
 				E336F6C3260E4A0E0042CAE7 /* SceneDelegate.swift */,
 				E336F6C5260E4A0E0042CAE7 /* ListTableViewController.swift */,
@@ -63,8 +70,31 @@
 				E336F6CA260E4A110042CAE7 /* Assets.xcassets */,
 				E336F6CC260E4A110042CAE7 /* LaunchScreen.storyboard */,
 				E336F6CF260E4A110042CAE7 /* Info.plist */,
+				E336F6DE260E671A0042CAE7 /* imagesPlusNames.swift */,
 			);
 			path = Accelometron;
+			sourceTree = "<group>";
+		};
+		E336F6D7260E62AD0042CAE7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E336F6D8260E62B50042CAE7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E336F6DA260E62F50042CAE7 /* ParallaxCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E336F6D9260E62BB0042CAE7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			files = (
 				E336F6C6260E4A0E0042CAE7 /* ListTableViewController.swift in Sources */,
 				E336F6C2260E4A0E0042CAE7 /* AppDelegate.swift in Sources */,
+				E336F6DF260E671A0042CAE7 /* imagesPlusNames.swift in Sources */,
+				E336F6DB260E62F50042CAE7 /* ParallaxCell.swift in Sources */,
 				E336F6C4260E4A0E0042CAE7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
